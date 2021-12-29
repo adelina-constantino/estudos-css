@@ -1,0 +1,21 @@
+/*ESTE CÓDIGO É PARA CRIAR A ÁREA QUADRICULADA*/
+.area-container {
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute; /*posicionamento*/
+    top: 50%;/*posicionamento*/
+    left: 50%;/*posicionamento*/
+    transform: translate(-50%, -50%);/*posicionamento*/
+    --gradient: #0004 0 0.275%, #0000 0 9.875%, #0004 0 10%;
+    background: repeating-linear-gradient(var(--gradient)),
+                repeating-linear-gradient(to right, var(--gradient));
+    background-color: #f000;
+}
+
+.circulo div,
+    .circulo div::before,
+    .circulo div::after {
+    position: absolute;
+    box-sizing: border-box;
+    display: block
+}
